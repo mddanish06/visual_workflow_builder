@@ -17,7 +17,7 @@ export const SubmitButton = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("https://visual-workflow-builder-8n0i.onrender.com", {
+      const response = await fetch("https://visual-workflow-builder-8n0i.onrender.com/pipelines/parse", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nodes, edges }),
